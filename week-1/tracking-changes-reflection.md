@@ -15,18 +15,18 @@ What are the 3 stages of a git change and how do you move a file from one stage 
 untracked files, ready to stage, and ready to commit. They are moved through the different stages with git add and git status.
 
 Write a handy cheatsheet of the commands you need to commit your changes?
-*git clone will copy a repo to your local workstation
-*git checkout is used to switch and create new branches
-*git status checks the status of all of the tracked files in the local repo
-*git log will show the log of the commits
-*git add will stage a file to be commited
-*git commit -m "message here" will commit staged files with a message
-*git branch will tell you what branch you're in and list all branches
-*git pull will copy any changed files from the origin to the local computer
-*git push is used to submit your branch to the origin to be merged
-*git fetch will download from a repo. same as git pull?
-*git merge will combine two branches
-*git reset changes to a different commit, used with HEAD
+* git clone will copy a repo to your local workstation
+* git checkout is used to switch and create new branches
+* git status checks the status of all of the tracked files in the local repo
+* git log will show the log of the commits
+* git add will stage a file to be commited
+* git commit -m "message here" will commit staged files with a message
+* git branch will tell you what branch you're in and list all branches
+* git pull will copy any changed files from the origin to the local computer
+* git push is used to submit your branch to the origin to be merged
+* git fetch will download from a repo. same as git pull?
+* git merge will combine two branches
+* git reset changes to a different commit, used with HEAD
 
 What is a pull request and how do you create and merge one?
 Pull requests are used to submit and merge work with the remote master. You create a pull request by pushing your branch to the origin master.  Then you need to view and confirm the request on the Github website.
