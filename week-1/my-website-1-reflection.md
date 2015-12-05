@@ -19,7 +19,7 @@ Licensing is very important.  It gives the creator credit for their work and det
 
 What concepts were solidified in the challenge? Did you have any "aha" moments? What did you struggle with?
 
-No mind blowning moments here.  It was an easy challenge to follow.  I am still trying to grasp all of git.  I am able to work through it but not completely comfortable yet.  I'm also trying to break my habit of typing get instead of git
+No mind blowing moments here.  It was an easy challenge to follow.  I am still trying to grasp all of git.  I am able to work through it but not completely comfortable yet.  I'm also trying to break my habit of typing get instead of git
 
 Did you find any resources on your own that helped you better understand a topic? If so, please list it.
 
