@@ -1,5 +1,5 @@
 Paste a link to your [USERNAME].github.io repository.
-timlkelly.github.
+timlkelly.github.io
 
 Explain how to create a repository on GitHub and clone the repository to your local computer to a non-technical person.
 
