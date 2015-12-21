@@ -1,0 +1,97 @@
+body {
+  color: #000080;
+  background: #ffffff;
+  a:link:#800080;
+  a:visited: #ff0000;
+  }
+
+.left {
+	/*border: 2px solid black;*/
+	display: inline-block;
+  position:relative;
+	width: 45%;
+  margin-left:50px;
+}
+
+.right {
+	width: 45%;
+  height: ;
+	/*border: 2px solid black;*/
+  display: inline-block;
+  position:relative;  
+}
+
+h1 {
+  text-align:center;
+  font-weight:bold;
+  font-size:18px;
+}
+
+#first-letter{
+  font-size:200%;
+}
+
+#return-m{
+  display:block;
+  text-align:center;
+  font-weight:bold;
+  font-size:12px;
+}
+
+#return-l{
+  display:block;
+  text-align:center;
+  font-weight:bold;
+  font-size:16px;
+
+}
+
+li span {
+  font-size: 10px;
+}
+
+#foot{
+  font-size:10px;
+}
+
+  #geico {
+    text-align: center;
+    font-size:10px;
+
+  }
+
+  #footer {
+    font-size: 12px;
+  }
+
+  #hr {
+    width:100%;
+    height:1px;
+    background-color: black;
+  }
+
+  /*
+What is important to know when linking an external file (like a stylesheet) to an HTML file?
+
+It is good practice to external links in a separate directory.  Also important to be specific to the destination as the html obviously depends on this external file.
+
+
+What tricks did you use to help you with positioning? How hard was it to get the site as you wanted it?
+
+Yes, it was difficult.  I think I got it close but not quite there.  Positioning is something I dont quite have done yet. It makes sense when I read about it but in practice it always feels like it's doing something other than what I expected.  
+
+
+What CSS did you use to modify the element style (like size, color, etc.)
+
+I used classes, IDs and element selectors.
+
+
+Did you modify the HTML to include classes or ids? If so, which did you choose and why? If you didn't, how would you know which one to add to your HTML?
+
+I did, yes.  I needed the specificity that classes and IDs allow.  
+
+When you compared your site to the actual code base, which do you think had cleaner code that followed best practices and why?
+
+I think their site's code is probably cleaner.  As this was, clearly, a learning practice for myself, I felt that my code got more and more wrapped up in itself as I tried to format it in CSS.  To me it did not feel simple or clean and while I'm not sure if I know what the best way is, I'm sure mine could have been more concise.  I also think that I did not set myself up for the CSS half.  While the html and the css are two separate files, it is now very obvious that you need to think of the two when you are creating either of them.  In html you need to prepare and give yourself space and places to apply the css to.
+
+*/
