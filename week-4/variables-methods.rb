@@ -18,6 +18,15 @@ puts "Oh? but don't you think " + better_num.to_s + " is a bigger, better number
 
 
 =begin
+
+4.3.1 Return a Formatted Address 
+	
+	https://github.com/timlkelly/phase-0/blob/master/week-4/define-method/address/my_solution.rb
+
+4.3.2 Defining Math Methods
+	
+	https://github.com/timlkelly/phase-0/blob/master/week-4/math/my_solution.rb
+
 How do you define a local variable?
 
 	A local variable is a variable that you can set to integers, strings or even nothing.  
