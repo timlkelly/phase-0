@@ -25,4 +25,4 @@ p ((60 * 24) * 365) * 10
 
 [Simple String Methods](https://github.com/timlkelly/phase-0/blob/master/week-4/simple-string.rb)
 
-[Local Variables and Basic Arithmetical Operations]()
+[Local Variables and Basic Arithmetical Operations](https://github.com/timlkelly/phase-0/blob/master/week-4/basic-math.rb)
