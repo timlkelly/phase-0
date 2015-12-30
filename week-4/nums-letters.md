@@ -26,3 +26,28 @@ p ((60 * 24) * 365) * 10
 [Simple String Methods](https://github.com/timlkelly/phase-0/blob/master/week-4/simple-string.rb)
 
 [Local Variables and Basic Arithmetical Operations](https://github.com/timlkelly/phase-0/blob/master/week-4/basic-math.rb)
+***
+
+#How does Ruby handle addition, subtraction, multiplication, and division of numbers?
+
+Ruby can perform all of these operations with the following operators: + - * /, respectively.
+
+#What is the difference between integers and floats?
+
+An integer is a whole number not containing any decimal points.  A float is a number containing a decimal point like 4.25
+
+#What is the difference between integer and float division?
+
+Integer division will round down to the nearest integer while float division will give you a more precise answer.
+
+#What are strings? Why and when would you use them?
+
+A string is a container that can have letters, words, sentences, numbers, or even nothing inside it.
+
+#What are local variables? Why and when would you use them?
+
+A local variable is a variable created and used inside a program.  They can be used to keep track of numbers or strings and they are helpful for keeping everything concise.
+
+#How was this challenge? Did you get a good review of some of the basics?
+
+This was an excellent review.  Definitely helpful to come back to this as it has been a while.
