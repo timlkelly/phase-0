@@ -11,11 +11,18 @@ An integer is a whole number or a number with no decimal point while a float is 
 Integer division will result in a whole number, rounding down if necessary.  Float division will result in a float answer.  Loosely translated, Float division includes the remainder while integer division simply rounds down.
 
 ***
-## Hours in a year
+### Hours in a year
 ```
 p  365 * 24
 ```
-## Minutes in a decade
+### Minutes in a decade
 ```
 p ((60 * 24) * 365) * 10
 ```
+
+***
+[Defining Variables](https://github.com/timlkelly/phase-0/blob/master/week-4/defining-variables.rb)
+
+[Simple String Methods](https://github.com/timlkelly/phase-0/blob/master/week-4/simple-string.rb)
+
+[Local Variables and Basic Arithmetical Operations]()
