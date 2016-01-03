@@ -12,6 +12,8 @@
 
 # # Your Solution Below
 
+# The top method is my final submission. Though this exercise really had me stumped for quite awhile.  Below is my refactored method as well as a lot of early attempts on this method.
+
 def smallest_integer(list_of_nums)
   smallest = nil
     list_of_nums.each do |num|
