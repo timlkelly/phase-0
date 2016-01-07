@@ -53,7 +53,11 @@ end
 
 # Identify and describe the Ruby method(s) you implemented.
 
-# I used .sort_by for both methods to do the sorting.  This is a built in array method.
+# I used .sort_by for both methods to do the sorting.  This is a built in array method. It takes a
+# object and block setup.  So you would write it like this:
+# 
+#   some_array.sort_by { |obj| code_block }
+# 
 # It's very helpful because it allows you to specify how you want it to sort, or run an additional
 # code block with your sort.
 # 
