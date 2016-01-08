@@ -105,6 +105,12 @@ end
 # 4. ReflectionWhich data structure did you and your pair decide to implement and why?
 
 =begin
+Which data structure did you and your pair decide to implement and why?
+
+We decided to convert the input into a hash and then back to an array for the output.  We used a hash because
+of the specific keys. They were very helpful in counting up totals for specific numbers/strings by setting
+the key to the value we want to count.
+
 Were you more successful breaking this problem down into implementable pseudocode than the last with a pair?
 
 Yes and no.  I think we did a good job breaking down some of the steps but not all of the steps. Additionally
