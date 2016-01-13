@@ -48,7 +48,7 @@ class Die
 
   def initialize(labels)
     @labels = labels
-    raise ArgumentError.new("Nothing here!") if labels == []
+    raise ArgumentError.new("Nothing here!") if labels.empty?
   end
 
   def sides
