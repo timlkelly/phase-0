@@ -19,26 +19,27 @@
 
 # Initial Solution
 
-# class Die
-#   def initialize(labels)
-#     @labels = labels
-#     if labels == []
-#       raise ArgumentError.new("Nothing here!")
-#     end
-#   end
+class Die
+  def initialize(labels)
+    @labels = labels
+    if labels == []
+      raise ArgumentError.new("Nothing here!")
+    end
+  end
 
-#   def labels
-#     @labels
-#   end
+  def labels
+    @labels
+  end
 
-#   def sides
-#     sides = labels.length
-#   end
+  def sides
+    count = 0
+    labels.each { |n| count+=1}
+  end
 
-#   def roll
-#     roll = labels.sample
-#   end
-# end
+  def roll
+    roll = labels.sample
+  end
+end
 
 # Refactored Solution
 
@@ -51,11 +52,11 @@ class Die
   end
 
   def sides
-    sides = labels.length
+    labels.length
   end
 
   def roll
-    roll = labels.sample
+    labels.sample
   end
 end
 
