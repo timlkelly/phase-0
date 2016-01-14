@@ -8,7 +8,7 @@
 
 # Create a method to generate a letter ( b, i, n, g, o) and a number (1-100)
   #fill in the outline here
-  #use methods, ranges, and random to pick a letter and number
+  #Associate each letter to a number to be able to search through arrays
 
 # Check the called column for the number called.
   #fill in the outline here
@@ -48,6 +48,7 @@
 
 # Initial Solution
 
+=begin
 class BingoBoard
   attr_reader :bingo_board
   attr_accessor :letter, :number
@@ -87,9 +88,46 @@ class BingoBoard
     p bingo_board[4]
   end
 end
+=end
 
 # Refactored Solution
 
+class BingoBoard
+  attr_reader :bingo_board, :columns
+  attr_accessor :letter, :number
+
+  def initialize(board)
+    @bingo_board = board
+  end
+
+  def pull
+    @columns = ["B", "I", "N", "G", "O"]
+    @letter = columns.sample
+    @number = rand(1..100)
+    puts "The lucky number is: " + letter + " " + number.to_s
+  end
+
+  def checker
+  column_to_check = columns.index { |a| a == letter}
+  bingo_board.each do |row|
+    row=0
+    until row == 4
+      num_to_check = bingo_board[row][column_to_check]
+      if num_to_check == number
+        bingo_board[row][column_to_check] = "X"
+        p "MATCH!"
+      else
+        row += 1
+      end
+    end
+  end
+    p bingo_board[0]
+    p bingo_board[1]
+    p bingo_board[2]
+    p bingo_board[3]
+    p bingo_board[4]
+  end
+end
 
 
 #DRIVER CODE (I.E. METHOD CALLS) GO BELOW THIS LINE
@@ -108,3 +146,46 @@ new_game.checker
 
 
 #Reflection
+=begin
+How difficult was pseudocoding this challenge? What do you think of your pseudocoding style?
+  It was kindof difficult to pseudocode this challenge.  I think my pseudocode style is to 
+  create a very brief outline, start coding, and then come back to fill it in.  I can't seem
+  to really get my head into the problem while still being abstract about it during the pseudocode.
+  It's also difficult to find a way to write pseudocode as English-y as possible.  But where's 
+  the line really? I'm just not too sure how close to get sometimes.
+
+What are the benefits of using a class for this challenge?
+  The class let us call our methods on an instance of the game. It was also important because 
+  Instance variables allowed us to separate the methods while still sharing information.
+
+How can you access coordinates in a nested array?
+  In this scenario you can access them in a column/row style.  The instance already gives us
+  which column to look in, so I just needed to filter through the rows.
+
+What methods did you use to access and modify the array?
+  I used fetch and index to determine which column to search and each to go through the rows.
+
+Give an example of a new method you learned while reviewing the Ruby docs. 
+Based on what you see in the docs, what purpose does it serve, and how is it called?
+  I read about the Enumerable Find method.  Find returns true if it finds the object specified
+  in the block.  Here is an example of it being used: 
+
+  (1..100).find    { |i| i % 5 == 0 and i % 7 == 0 }
+
+  So it is iterating through the range searching for a number that is divisible by both 7 and 5.
+  I was hoping to use it when I refactored and while I believe I got it to work with sub-arrays,
+  I then ran into trouble replacing the number with "X" because I did not have the location.
+
+How did you determine what should be an instance variable versus a local variable?
+  Instance variables are to be used throughout the class while local stay with the method they
+  are created in.  I determine on which to use if the data needs to be shared by the whole instance.
+
+What do you feel is most improved in your refactored solution?
+  The way the checker method determines which column to search. Initially I created a Hash with each
+  key set to a letter and value set to the column it was in. So B would return 0. When refactoring
+  I realized that the array I used to pick a letter in the beginning is already doing that same job.
+  I made it an instance variable so the checker could access it and match the picked letter back
+  to the array and find it's index. Code wise it saved only one line but I did not have to create
+  an unnecessary hash.
+
+=end
