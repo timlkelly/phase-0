@@ -57,7 +57,7 @@ class BingoBoard
     @bingo_board = board
   end
 
-  def pull
+  def generate
     # @letter = letter
     # @number = number
     columns = ["B", "I", "N", "G", "O"]
@@ -66,7 +66,7 @@ class BingoBoard
     p @number = rand(1..100)
   end
 
-  def checker
+  def check
     columns = { "B" => 0, "I" => 1, "N" => 2, "G" => 3, "O" => 4 }
     c = columns.fetch(letter)
     bingo_board.each do |n|
@@ -100,14 +100,14 @@ class BingoBoard
     @bingo_board = board
   end
 
-  def pull
+  def generate
     @columns = ["B", "I", "N", "G", "O"]
     @letter = columns.sample
     @number = rand(1..100)
     puts "The lucky number is: " + letter + " " + number.to_s
   end
 
-  def checker
+  def check
   column_to_check = columns.index { |a| a == letter}
   bingo_board.each do |row|
     row=0
@@ -116,11 +116,20 @@ class BingoBoard
       if num_to_check == number
         bingo_board[row][column_to_check] = "X"
         p "MATCH!"
+        @game_board = bingo_board
       else
         row += 1
       end
     end
   end
+    p bingo_board[0]
+    p bingo_board[1]
+    p bingo_board[2]
+    p bingo_board[3]
+    p bingo_board[4]
+  end
+
+  def display
     p bingo_board[0]
     p bingo_board[1]
     p bingo_board[2]
@@ -139,8 +148,20 @@ board = [[47, 44, 71, 8, 88],
 
 new_game = BingoBoard.new(board)
 
-new_game.pull
-new_game.checker
+new_game.generate
+new_game.check
+new_game.generate
+new_game.check
+new_game.generate
+new_game.check
+new_game.generate
+new_game.check
+new_game.generate
+new_game.check
+new_game.generate
+new_game.check
+puts
+new_game.display
 
 
 
