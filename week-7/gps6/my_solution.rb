@@ -43,7 +43,7 @@ class VirusPredictor
     #   @population_density >= 150 ? (@population * 0.3).floor :
     #   @population_density >= 100 ? (@population * 0.2).floor :
     #   @population_density >= 50 ? (@population * 0.1).floor :
-    #   (@population_density * 0.5).floor)
+    #   (@population * 0.5).floor)
   
 
 #     if @population_density >= 200
