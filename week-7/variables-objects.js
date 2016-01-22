@@ -10,11 +10,6 @@ var secretNumber = 7,
   allowedIn = false,
   members = ['John', 0, 0, 'Mary'];
 
-
-
-
-
-
 // __________________________________________
 
 // Test Code:  Do not alter code below this line.
