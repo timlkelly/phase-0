@@ -79,11 +79,16 @@ console.log(michaelPhelps.name + " " + michaelPhelps.sport + " " + michaelPhelps
 // Reflection
 /*
 What JavaScript knowledge did you solidify in this challenge?
-
+  
+  More about Javascript objects, their properties and constructor functions.
 
 What are constructor functions?
 
+  Constructor functions allow you to create objects that share similar properties but are different.
+  They seem similar to classes in Ruby in that sense.
 
 How are constructors different from Ruby classes (in your research)?
 
+  Javascript constructors are instances of functions, while classes in Ruby are just a type of class.
+  For example the string class in ruby is not a string.  It is a class with specific methods.
 */
