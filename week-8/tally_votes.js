@@ -75,34 +75,98 @@ Find the highest vote count for each position and assign that position to the wi
 // __________________________________________
 // Initial Solution
 
-function countVotes(voteArray){
-  var inner = 0;
-  for (index in votes){
-    voteCount = votes[index][inner] += 1;
-    inner += 1;
+/*
+var max = function(obj){
+  var index = 0;
+  var winner = "";
+  for (name in obj){
+    for (voted in obj[name]){
+      // console.log(obj[name][voted]);
+      if (obj[name][voted] > index){
+        index = obj[name][voted];
+        winner = obj[name];
+      }
+    }
+  }
+  console.log(winner);
+  return winner;
+}
+
+for (var name in votes){
+  for (var title in voteCount){
+    if (voteCount[title][votes[name][title]] === undefined){
+      voteCount[title][votes[name][title]] = 1
+    } else {
+      voteCount[title][votes[name][title]] += 1;
+    }
+  }  
+}
+
+// console.log(voteCount);
+
+for (var name in voteCount){
+  // console.log(voteCount[name]);
+  for (var position in officers){
+    if (officers[position] === undefined){
+      officers[position] = max(voteCount);
+    }
   }
 }
 
+// console.log(max(voteCount));
 
-
-
-
+console.log(officers);
+*/
 // __________________________________________
 // Refactored Solution
 
+var voteCounter = function(casted_votes){
+var winner = "";
+var current_winning_tally = 0;
+  for (var candidate in casted_votes){
+    if (casted_votes[candidate] > current_winning_tally){
+      current_winning_tally = casted_votes[candidate]
+      winner = candidate
+    }
+  }
+  // console.log(winner);
+  return winner;
+}
 
+for (var name in votes){
+  for (var title in voteCount){
+    if (voteCount[title][votes[name][title]] === undefined){
+      voteCount[title][votes[name][title]] = 1
+    } else {
+      voteCount[title][votes[name][title]] += 1;
+    }
+  }  
+}
 
-
-
+for (var name in voteCount){
+  console.log(voteCount[name]);
+  if (officers[name] === undefined){
+    officers[name] = voteCounter(voteCount[name]);
+  }
+}
 
 // __________________________________________
 // Reflection
+/*
+What did you learn about iterating over nested objects in JavaScript?
 
+  To be rather specific with naming your variables.  It is very easy to get lost inside
+  of the nested object easily, especially when dealing so multiple nested objects.
 
+Were you able to find useful methods to help you with this?
 
+  Not really, we wrote our own function to determine the winner in each position.
 
+What concepts were solidified in the process of working through this challenge?
 
-
+  Accessing data in nested sequences and dot notation vs bracket notation.
+  
+*/
 // __________________________________________
 // Test Code:  Do not alter code below this line.
 
